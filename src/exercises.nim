@@ -28,16 +28,14 @@ proc exercise_2*() =
 
     echo("Result: " & $sequence)
 
-# proc exercise_3*(point_1: tuple[x, y: float], point_2: tuple[x, y: float]): tuple[x, y: float] =
-#     return (point_1[0] + point_2[0], point_1[1] + point_2[1])
+proc exercise_3*() =
+    echo "Enter a word:"
+    let text = read_line(stdin)
 
-# proc tick() =
-#     echo "tick"
+    var inversed_text = ""
+    
+    for letter in text:
+        inversed_text = $letter & inversed_text
 
-# proc tock() =
-#     echo "tock"
-
-# proc exercise_4*() =
-#     for idx in countup(1,20):
-#         tick()
-#         tock()
+    echo("Word: " & $text)
+    echo("Word inversed: " & $inversed_text)
