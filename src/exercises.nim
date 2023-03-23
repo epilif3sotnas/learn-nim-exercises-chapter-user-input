@@ -1,5 +1,6 @@
-# nim
-import strutils
+# std
+import
+    std/strutils
 
 
 proc exercise_1*() =
